@@ -1,25 +1,152 @@
-<html>
+<!DOCTYPE html>
+<html lang="sv">
 
 <head>
+    <meta charset="utf-8">
     <title>Pär Lundh</title>
+    <link href="style.css" rel="stylesheet">
 </head>
-<body>
-    <main>
-        <h2>Om mig</h2>                    
-            <p>Hej! Mitt namn är Pär Lundh.</p>
-            <p>Född och uppvuxen i Hedemora, Dalarna.</p>
-            <p>Flyttade ner till Helsingborg 2008</p>
-            <p>Jag är 41 år gammal & bor tillsammans med min sambo Michelle sedan 13 år tillbaka.</p>
-            <p>Jag påbörjade min resa inom programmering för ett år sedan med Programmering 1, då resten av min karriär i stort sett bara är.</p>
-            
-            <h3>Mina hobbyer</h3>
+
+    <body>
+        <header>
+            <h1>Pär Lundh</h1>
+            <!-- <nav>
                 <ul>
-                    <li>Filmer & Tv-serier</li>
-                    <li>Musik</li>
-                    <li>Brädspel</li>
-                    <li>TV-spel</li>
-                    <li>3D-Printing</li>
-                    <li>Sport</li>
-                </ul>                
+                    <li><a href="#hobby">Om mig</a></li>
+                    <li><a href="#cv">CV</a></li>
+                    <li><a href="#motivationen">Motivationen</a></li>
+                </ul>
+            </nav>     -->       
+        </header>
+
+        <main> 
+            <section id="hobby">
+                <div class="about">
+                <h2>Om mig</h2>
+                    <p>Jag påbörjade min resa inom programmering för c:a 1 år sedan, så jag är fortfarande relativt ny.</p>
+                    <p>Jobbat enbart inom Hotell & Restaurang samt Detaljvaruhandeln innan, men vill testa någonting nytt.</p>
+                </div>
+                <div class="columns">
+                    <div class="left">
+                        <h3>Mina hobbyer</h3>
+                        <ul>
+                            <li>Filmer & Tv-serier</li>
+                            <li>Musik</li>
+                            <li>Brädspel</li>
+                            <li>TV-spel</li>
+                            <li>3D-Printing</li>
+                            <li>Sport</li>
+                        </ul>
+                    </div>
+                    <div class="right">
+                        <img src="" alt="En bild på Pär.">
+                    </div>
+                </div>
+            </section>
+            
+            <!-- CV/Erfarenheter -->
+            <!-- Bygger upp denna enligt en vertikal tidslinje med punkter, där varje erfarenhet hamnar om vartannat till vänster, sen till höger i boxar -->
+            <section id="cv">
+                <h2>CV / Erfarenheter</h2>
+                <div class="timeline">
+
+                    <div class="timeline-item left">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>Ekonomiprogrammet</h3>
+                            <p class="year">2000–2003</p>
+                            <p>Martin Koch-gymnasiet</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item right">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>Medarbetare</h3>
+                            <p class="year">2001–2004</p>
+                            <p>McDonald's, Hedemora</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item left">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>Arbetsledare</h3>
+                            <p class="year">2004–2007</p>
+                            <p>McDonald's, Hedemora</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item right">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>Butiksmedarbetare</h3>
+                            <p class="year">2007–2008</p>
+                            <p>Hemköp, Hedemora</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item left">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>Butiksmedarbetare</h3>
+                            <p class="year">2008–2025</p>
+                            <p>ICA Maxi Special Råå, Helsingborg</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item right">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>Programmering 1</h3>
+                            <p class="year">2024</p>
+                            <p>Distansutbildning</p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Delen om varför jag valde denna utbildningen -->
+            <section id="motivation">
+                <h2>Varför jag pluggar detta</h2>
+                <div class="even-columns">
+                    <div>
+                        <p>Jag valde att söka den här utbildningen för att jag vill utvecklas mer inom programmering, för att jag verkligen gillar programmering och för att få ett jobb inom branschen.</p>
+                    </div>
+                    <div>
+                        <p>Av alla utbildningar jag tittat på de senaste åren så lockade denna absolut mest, med ett bra upplägg som kräver mycket av studenten, men som också ger möjlighet att studera hemifrån.</p>
+                    </div>
+                    <div>
+                        <p>Jag ser fram emot att få utveckla mina färdigheter och lära mig nya saker tillsammans med er alla, både kurskamrater och utbildare. Har ännu inte fastställt exakt vilken roll jag vill sikta på i framtiden.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Företag & länkar -->
+            <div class="companies">
+                <div>
+                    <a href="https://jobb.nowastelogistics.com/">Nowaste Logistics</a>
+                    <!--<p>Nowaste Logistics</p>*/-->
+                    <p>Helsingborg</p>
+                </div>
+                <div>
+                    <a href="https://www.techseed.se/">Techseed</a>
+                    <!--<p>Techseed</p>-->
+                    <p>Malmö</p>
+                </div>
+                <div>    
+                    <a href="https://nexergroup.com/">Nexer Group</a>             
+                    <!--<p>Nexer Group</p>-->
+                    <p>Malmö</p>
+                </div>
+            </div>
+
+        </main>
+
+        <footer>
+            <p>Chas Academy student - Learning in progress.</p>
+        </footer>
+
     </body>
 </html>
