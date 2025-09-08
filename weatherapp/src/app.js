@@ -42,11 +42,11 @@ function displayWeather(data) {
     }
 
     weatherContainer.innerHTML = `
-        <!-- <h2>Vädret i ${city}</h2> -->
-        <p>Temperatur: ${parseFloat(temperature).toFixed(2)} °C</p>
-        <p>Beskrivning: ${description}</p>
-        <p>Luftfuktighet: ${humidity}%</p>
-        <p>Vindhastighet: ${windSpeed} m/s</p>
+        <!-- <h2>Weather in ${city}</h2> -->
+        <p>Temperature: ${parseFloat(temperature).toFixed(2)} °C</p>
+        <p>Description: ${description}</p>
+        <p>Humidity: ${humidity}%</p>
+        <p>Wind speed: ${windSpeed} m/s</p>
         <img src="${imagePath}" alt="${description}. A picture of the weather." style="width:200px; height:auto;">
     `;
 }
