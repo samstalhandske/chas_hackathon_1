@@ -10,28 +10,25 @@
 
     <body>
         <header>
-            <article>
-                <h1>Pär Lundh</h1>
-            </article>
-            <nav>
-                <ul>
-                    <li><a href="#hobby">Om mig</a></li>
-                    <li><a href="#cv">CV</a></li>
-                    <li><a href="#motivationen">Motivationen</a></li>
-                </ul>
-            </nav>  
+            <nav class="navbar">
+        <div class="menu-left">
+            <a href="../index.html">Home</a>
+            <a href="../profiles.html">Profiles</a>
+        </div>
+    </nav> 
         </header>
 
         <main>
             <article>
                 <section id="hobby">
-                    <div class="about">
-                    <h2>Om mig</h2>
+                    <div class="container">
+                    <img src="pics/Par.jpg" alt="En bild på Pär.">
+                    <h2>Pär Lundh</h2>
                         <p>Jag påbörjade min resa inom programmering för c:a 1 år sedan, så är väldigt ny fortfarande.</p>
                         <p>Gillar verkligen att jobba med datorer och att hitta lösningar på problem, vilket lockat mig till att satsa på detta.</p>
                         <p>Jobbat enbart inom Hotell & Restaurang samt Detaljvaruhandeln innan, men ville testa någonting nytt.</p>
                     </div>
-                    <div class="columns">
+                    <div class="container">
                         <div class="left">
                             <h3>Mina hobbyer</h3>
                             <ul>
@@ -43,9 +40,6 @@
                                 <li>Sport</li>
                             </ul>
                         </div>
-                        <div class="right">
-                            <img src="pics/Par.jpg" alt="En bild på Pär.">
-                        </div>
                     </div>
                 </section>
             </article>
@@ -53,62 +47,38 @@
             <article>
                 <section id="cv">
                     <h2>CV / Erfarenheter</h2>
-                    <div class="timeline">
+                    <div class="section">
+                        <h3>Ekonomiprogrammet</h3>
+                        <p>2000–2003</p>
+                        <p>Martin Koch-gymnasiet</p>
+                    </div>
+                    <div class="section">
+                        <h3>Medarbetare</h3>
+                        <p>2001–2004</p>
+                        <p>McDonald's, Hedemora</p>
+                    </div>
+                    <div class="section">
+                        <h3>Arbetsledare</h3>
+                        <p>2004–2007</p>
+                        <p>McDonald's, Hedemora</p>
+                    </div>
 
-                        <div class="timeline-item left">
-                            <div class="timeline-dot"></div>
-                            <div class="timeline-content">
-                                <h3>Ekonomiprogrammet</h3>
-                                <p class="year">2000–2003</p>
-                                <p>Martin Koch-gymnasiet</p>
-                            </div>
-                        </div>
+                    <div class="section">
+                        <h3>Butiksmedarbetare</h3>
+                        <p>2007–2008</p>
+                        <p>Hemköp, Hedemora</p>
+                    </div>
 
-                        <div class="timeline-item right">
-                            <div class="timeline-dot"></div>
-                            <div class="timeline-content">
-                                <h3>Medarbetare</h3>
-                                <p class="year">2001–2004</p>
-                                <p>McDonald's, Hedemora</p>
-                            </div>
-                        </div>
+                    <div class="section">
+                        <h3>Butiksmedarbetare</h3>
+                        <p>2008–2025</p>
+                        <p>ICA Maxi Special Råå, Helsingborg</p>
+                    </div>
 
-                        <div class="timeline-item left">
-                            <div class="timeline-dot"></div>
-                            <div class="timeline-content">
-                                <h3>Arbetsledare</h3>
-                                <p class="year">2004–2007</p>
-                                <p>McDonald's, Hedemora</p>
-                            </div>
-                        </div>
-
-                        <div class="timeline-item right">
-                            <div class="timeline-dot"></div>
-                            <div class="timeline-content">
-                                <h3>Butiksmedarbetare</h3>
-                                <p class="year">2007–2008</p>
-                                <p>Hemköp, Hedemora</p>
-                            </div>
-                        </div>
-
-                        <div class="timeline-item left">
-                            <div class="timeline-dot"></div>
-                            <div class="timeline-content">
-                                <h3>Butiksmedarbetare</h3>
-                                <p class="year">2008–2025</p>
-                                <p>ICA Maxi Special Råå, Helsingborg</p>
-                            </div>
-                        </div>
-
-                        <div class="timeline-item right">
-                            <div class="timeline-dot"></div>
-                            <div class="timeline-content">
-                                <h3>Programmering 1</h3>
-                                <p class="year">2024</p>
-                                <p>Distansutbildning</p>
-                            </div>
-                        </div>
-
+                    <div class="section">
+                        <h3>Programmering 1</h3>
+                        <p>2024</p>
+                        <p>Distansutbildning</p>
                     </div>
                 </section>
             </article>
@@ -147,6 +117,9 @@
             </div>
 
         </main>
+
+        <button onclick="topFunction()" id="scrollToTopButton" title="Go to top">Top</button>
+        <script src="../scrolltotop/scrolltotop.js"></script>
 
         <footer>
             <p>Chas Academy student - Learning in progress.</p>
