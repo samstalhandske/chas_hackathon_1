@@ -1,0 +1,12 @@
+#scrollToTopButton {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  font-weight: bold;
+  background-color: grey;
+  opacity: 0.5;
+  border-radius: 5px;
+  padding: 10px;
+  display: none;
+}
