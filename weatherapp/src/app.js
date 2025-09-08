@@ -34,6 +34,9 @@ function displayWeather(data) {
     else if (description.includes("cloud")) {
       imagePath = "images/cloud.jpg";
     }
+    else if (description.includes("clear")) {
+      imagePath = "images/clear_sky.jpg";
+    }
     else {
     imagePath = "images/HD-wallpaper-brown-dog-sitting-cute-animal-brown-dog.jpg"; // Fallback image
     }
