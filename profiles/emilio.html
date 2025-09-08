@@ -2,36 +2,40 @@
 <head>
     <title>Emilio Ganibegovic</title>
     <link rel="stylesheet" type="text/css" href="../scrolltotop/scrolltotop.css">
+	<link rel="stylesheet" href="../style.css">
 </head>
 
 <body>
-    <h1 id="name">Emilio Ganibegovic</h1>
-    <hr id="horizontal-line">
+	<nav class="navbar">
+        <div class="menu-left">
+            <a href="../index.html">Home</a>
+            <a href="../profiles.html">Profiles</a>
+			<a href="../weatherapp/src/weather.html">Weather</a>
+        </div>
+    </nav>
 
-    <img src="pics/emilio.jpg" alt="a image of me">
-
-    <h2>Summary</h2>
-    <p>My name is Emilio Ganibegovic, and I live in Hässleholm. I am currently studying to become a Embedded developer.</p>
-
-
-    
-    <h2>Education</h1>
-    <ul>
-        <li>LBS Lund - Game development - <b>2021-2024</b></li>
-    </ul>
-
-
+    <div class="container">
+		<h1 id="name">Emilio Ganibegovic</h1>
+    <picture>
+      <source srcset="pics/emilio.jpg" type="image/webp">
+      <img src="pics/emilio.jpg" alt="Lukas Städe" style="width:150px;height:auto;border-radius:50%;">
+		<div class="section">
+			<h2>Summary</h2>
+			<p> My name is Emilio Ganibegovic, and I live in Hässleholm. I am currently studying to become a Embedded developer.</p>
+		</div>
+		<div class="section">
+			<h2>Education</h2>
+			<ul>
+				<li><strong> Game development </strong> - LBS Lund (2021-2024)</li>
+			</ul>
+		</div>
+	</div>
     <button onclick="topFunction()" id="scrollToTopButton" title="Go to top">Top</button>
     <script src="../scrolltotop/scrolltotop.js"></script>
 </body>
 
 <style>
     img {
-        width: 200px;
-        height: 250px;
-
-        border-radius: 5px;
-
         display: block;
         margin-left: auto;
         margin-right: auto;
